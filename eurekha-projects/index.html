@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FusionXSLR — Group Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="FusionXSLR — Hand Mechanism & RC Car and BlockWorld game showcase." />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Canvas background -->
+  <canvas id="bg-canvas" class="bg-canvas"></canvas>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">E</div>
+        <div>
+          <h1>FusionXSLR</h1>
+          <div class="muted">Group Portfolio — Innovative builds & games</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="ghost">Download PDF</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <div class="eyebrow">FusionXSLR • INNOVATION</div>
+          <h2 class="headline">Engineering. Gaming. Imagination.</h2>
+          <p class="lead">Showcasing our flagship projects — a hybrid Hand Mechanism & Vacuum RC Car, and a fully developed block-building game inspired by sandbox worlds.</p>
+          <div class="cta-row">
+            <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">See Projects</button>
+            <a class="btn ghost" href="#team">Meet the Team</a>
+          </div>
+          <div class="meta">
+            <div class="muted">Status: <span class="neon">Active Development</span></div>
+            <div class="muted">Last update: Oct 2025</div>
+          </div>
+        </div>
+
+        <aside class="stats">
+          <div class="muted small">Quick facts</div>
+          <div class="stat"><div>Projects</div><div><strong>2</strong></div></div>
+          <div class="stat"><div>Team Members</div><div><strong>3</strong></div></div>
+          <div class="stat"><div>Repo</div><div><a href="#" class="accent">GitHub</a></div></div>
+          <div class="stat"><div>Demo</div><div><a href="#projects" class="accent">Play / Trial</a></div></div>
+        </aside>
+      </section>
+
+      <section id="projects" class="projects">
+        <article class="project">
+          <div class="media"><img src="assets/images/placeholder1.png" alt="Hand Mechanism" /></div>
+          <div class="content">
+            <h3>Smart Hand Mechanism & Vacuum RC Car</h3>
+            <p class="muted">A hybrid hardware prototype combining a precision servo-driven hand mechanism with a remote-control chassis equipped with a detachable vacuum suction unit. Designed for lightweight object pickup and demonstration of coordinated robotics controls.</p>
+            <div class="chips">
+              <span class="chip">Arduino</span>
+              <span class="chip">Servo Motors</span>
+              <span class="chip">Bluetooth Control</span>
+              <span class="chip">Vacuum Module</span>
+            </div>
+            <div class="features">
+              <div class="feature"><strong>Remote Control</strong><div class="muted small">Bluetooth RC via phone/controller</div></div>
+              <div class="feature"><strong>Grip Precision</strong><div class="muted small">Servo-actuated fingers with feedback</div></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media"><img src="assets/images/placeholder2.png" alt="BlockWorld" /></div>
+          <div class="content">
+            <h3>BlockWorld — The 3D Sandbox Game</h3>
+            <p class="muted">A fully-built sandbox where players can generate and edit voxel-like terrain, craft simple items, and explore a procedurally generated world. Built as a capstone to test rendering, physics, and world-gen algorithms.</p>
+            <div class="chips">
+              <span class="chip">Ursina / Unity</span>
+              <span class="chip">Procedural Generation</span>
+              <span class="chip">Terrain Editing</span>
+            </div>
+            <div class="features">
+              <div class="feature"><strong>World Gen</strong><div class="muted small">Noise-based terrain & biomes</div></div>
+              <div class="feature"><strong>Build Mode</strong><div class="muted small">Place/remove blocks in realtime</div></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+          <div class="member-card">
+            <div class="avatar">S</div>
+            <div class="name">Surya</div>
+            <div class="role">Hardware Engineer (Hand Mechanism)</div>
+          </div>
+          <div class="member-card">
+            <div class="avatar">L</div>
+            <div class="name">Laksh</div>
+            <div class="role">Electronics & Firmware</div>
+          </div>
+          <div class="member-card">
+            <div class="avatar">R</div>
+            <div class="name">Ranveer</div>
+            <div class="role">Game Developer  </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p class="muted">Want to see code, schematics, or play the demo? Send us a message.</p>
+        <form onsubmit="submitForm(event)">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Your email" required />
+          <textarea id="message" placeholder="Message (what do you want to see?)"></textarea>
+          <div class="form-actions"><button class="btn" type="submit">Send Message</button></div>
+        </form>
+        <div id="note" class="muted small"></div>
+      </section>
+    </main>
+
+    <footer>© FusionXSLR — Built with ❤️ by the team</footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
